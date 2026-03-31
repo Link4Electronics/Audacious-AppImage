@@ -10,8 +10,11 @@ pacman -Syu --noconfirm \
     audacious         \
     audacious-plugins \
     fluidsynth        \
+    lxqt-qtplugin     \
+    kvantum           \
     pipewire-audio    \
-    pipewire-jack
+    pipewire-jack     \
+    qt6ct
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
