@@ -12,6 +12,7 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/audacious.svg
 export DESKTOP=/usr/share/applications/audacious.desktop
 export STARTUPWMCLASS=Audacious
 export DEPLOY_QT=1
+export QT_DIR=qt6
 export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
