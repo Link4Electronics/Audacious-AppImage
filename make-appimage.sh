@@ -3,7 +3,7 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q audacious | awk '{print $2; exit}') # example command to get version of application here
+VERSION=$(pacman -Q audacious | awk '{print $2; exit}')
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
@@ -17,8 +17,6 @@ export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/audacious /usr/bin/audtool /usr/share/audacious /usr/lib/audacious
-
-# Additional changes can be done in between here
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
